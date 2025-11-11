@@ -158,7 +158,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="hamburger-btn show-mobile"
+            className="hamburger-btn"
             onClick={toggleMobileMenu}
             aria-label="Toggle mobile menu"
           >

@@ -2,9 +2,9 @@
 
 :root {
   /* Brand Colors - Octalpha */
-  --color-primary-blue: #0072CE;
-  --color-primary-green: #58B25B;
-  --color-accent-blue: #2E75B6;
+  --color-primary-blue: #0c70bc;
+  --color-primary-green: #3ba56c;
+  --color-accent-blue: #0a5a9a;
 
   /* Background Colors - Light Theme */
   --color-bg-primary: #ffffff;
@@ -13,7 +13,7 @@
   --color-bg-border: #dee2e6;
 
   /* Functional Colors */
-  --color-success: #58B25B;
+  --color-success: #3ba56c;
   --color-warning: #fbbf24;
   --color-error: #ef4444;
 
@@ -22,12 +22,15 @@
   --color-text-secondary: #4a5568;
   --color-text-muted: #718096;
 
-  /* Gradients - Light Theme */
-  --gradient-hero: linear-gradient(135deg, #0072CE 0%, #2E75B6 100%);
-  --gradient-hero-overlay: linear-gradient(135deg, rgba(0,114,206,0.85) 0%, rgba(46,117,182,0.85) 100%);
-  --gradient-button-primary: linear-gradient(135deg, #0072CE 0%, #2E75B6 100%);
-  --gradient-button-secondary: linear-gradient(135deg, #58B25B 0%, #47a049 100%);
-  --gradient-accent-glow: radial-gradient(circle, rgba(0,114,206,0.08) 0%, transparent 70%);
+/* Gradients - Light Theme (Updated) */
+  /* Updated with new blue/accent: rgb(12, 112, 188) & rgb(10, 90, 154) */
+  --gradient-hero: linear-gradient(135deg, #0C70BC 0%, #0a5a9a 100%);
+  --gradient-hero-overlay: linear-gradient(135deg, rgba(12,112,188,0.85) 0%, rgba(10,90,154,0.85) 100%);
+  --gradient-button-primary: linear-gradient(135deg, #0C70BC 0%, #0a5a9a 100%);
+  
+  /* Updated with new green: rgb(59, 165, 108) & a darker shade */
+  --gradient-button-secondary: linear-gradient(135deg, #3BA56C 0%, #2d8a56 100%);
+  --gradient-accent-glow: radial-gradient(circle, rgba(12,112,188,0.08) 0%, transparent 70%);
   --gradient-light-bg: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
 
   /* Typography */
