@@ -1,0 +1,204 @@
+/* Mobile Menu Component Styles */
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: var(--z-modal-overlay);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  max-width: 320px;
+  height: 100%;
+  background-color: var(--color-bg-secondary);
+  z-index: var(--z-modal-content);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-large);
+}
+
+/* Close Button */
+.mobile-menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  color: var(--color-text-primary);
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-fast);
+  z-index: 1;
+}
+
+.mobile-menu-close:hover {
+  color: var(--color-primary-blue);
+}
+
+/* Header/Logo */
+.mobile-menu-header {
+  padding: var(--spacing-lg);
+  border-bottom: 1px solid var(--color-bg-border);
+}
+
+.mobile-menu-logo {
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Navigation */
+.mobile-menu-nav {
+  flex: 1;
+  padding: var(--spacing-md) 0;
+  overflow-y: auto;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav-item {
+  border-bottom: 1px solid var(--color-bg-border);
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link:active {
+  color: var(--color-primary-blue);
+  background-color: rgba(0, 114, 206, 0.1);
+}
+
+/* Accordion for Dropdown */
+.mobile-nav-accordion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion-icon {
+  font-size: 12px;
+  transition: transform var(--transition-fast);
+}
+
+.accordion-icon.open {
+  transform: rotate(180deg);
+}
+
+/* Submenu */
+.mobile-nav-submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-bg-primary);
+  overflow: hidden;
+}
+
+.mobile-nav-sublink {
+  display: block;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  padding-left: var(--spacing-xl);
+  color: var(--color-text-muted);
+  font-size: 14px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  border-left: 2px solid transparent;
+}
+
+.mobile-nav-sublink:hover {
+  color: var(--color-primary-blue);
+  background-color: rgba(0, 114, 206, 0.05);
+  border-left-color: var(--color-primary-blue);
+  padding-left: calc(var(--spacing-xl) + 4px);
+}
+
+/* Contact Info */
+.mobile-menu-contact {
+  padding: var(--spacing-lg);
+  border-top: 1px solid var(--color-bg-border);
+  background-color: var(--color-bg-primary);
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-icon {
+  font-size: 18px;
+}
+
+.contact-item a {
+  color: var(--color-primary-blue);
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+/* CTA Button */
+.mobile-menu-cta {
+  padding: var(--spacing-lg);
+  border-top: 1px solid var(--color-bg-border);
+}
+
+/* Scrollbar for Menu */
+.mobile-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.mobile-menu::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+.mobile-menu::-webkit-scrollbar-thumb {
+  background: var(--color-bg-border);
+  border-radius: 3px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .mobile-menu,
+  .mobile-menu-overlay {
+    display: none;
+  }
+}

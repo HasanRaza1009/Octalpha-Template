@@ -1,0 +1,15 @@
+.partner-logo {
+    max-width: 100%;
+    height: 60px; /* You can adjust this height */
+    object-fit: contain; /* Prevents logos from stretching */
+    /* This respects the grayscale hover effect from your Card */
+    /* filter: grayscale(100%); */
+    opacity: 0.7;
+    transition: all 0.3s ease;
+  }
+  
+  /* This assumes your Card component adds a 'hover' class or similar */
+  .card:hover .partner-logo {
+    filter: grayscale(0%);
+    opacity: 1;
+  }

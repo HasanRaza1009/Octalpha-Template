@@ -1,0 +1,34 @@
+{
+  "name": "octa-revised",
+  "version": "1.0.0",
+  "description": "Octalpha Business Solutions - Enterprise IT Services Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://x-access-token:ghs_vNfoy4CLnO2QE1pB6PW6xG4On55Im539boEP@github.com/NV18Codes/octa-revised.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/NV18Codes/octa-revised/issues"
+  },
+  "homepage": "https://github.com/NV18Codes/octa-revised#readme",
+  "dependencies": {
+    "framer-motion": "^12.23.24",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-intersection-observer": "^10.0.0",
+    "react-router-dom": "^7.9.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.0",
+    "vite": "^7.2.2"
+  }
+}
